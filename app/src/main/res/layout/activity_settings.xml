@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="25dp"
+    app:cardCornerRadius="30dp"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:layout_height="match_parent">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_gravity="center"
+        android:focusable="true"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="25dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginTop="0dp">
+
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:scaleType="centerCrop"
+             android:src="@drawable/with"
+             android:adjustViewBounds="true"
+             android:layout_height="match_parent"></ImageView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/greytransperaentmore"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:text="Settings"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:background="@color/colorAccent"
+                android:layout_margin="15dp"
+                android:padding="5dp"
+                android:id="@+id/settingtxt"
+                android:textStyle="bold"
+                android:fontFamily="@font/regu"
+                android:layout_height="wrap_content"></TextView>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_below="@id/settingtxt"
+               android:layout_margin="10dp"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_below="@id/settingtxt"
+                   android:orientation="horizontal"
+                   android:layout_height="wrap_content">
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:src="@drawable/ic_volume_up"
+                       android:layout_marginTop="10dp"
+                       android:id="@+id/img_VibratonSound"
+                       android:layout_height="30dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:text="Vibration"
+                       android:layout_marginLeft="10dp"
+                       android:textColor="@color/colorAccent"
+                       android:textSize="20sp"
+                       android:padding="5dp"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/level"
+                       android:layout_height="wrap_content"></TextView>
+
+
+                   <Switch
+                       android:id="@+id/VibtartionSwitch"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:checked="true"
+                       android:fontVariationSettings="@string/app_name"
+                       android:textColor="@color/black"
+                       android:textOff="Off"
+                       android:textOn="On"
+                       android:textSize="18sp"
+                       android:theme="@style/SwitchTheme" />
+
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_below="@id/settingtxt"
+                   android:orientation="horizontal"
+                   android:layout_height="wrap_content">
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:src="@drawable/ic_volume_up"
+                       android:layout_marginTop="10dp"
+                       android:id="@+id/img_BackgroundSound"
+                       android:layout_height="30dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:text="Background sound"
+                       android:layout_marginLeft="10dp"
+                       android:textColor="@color/colorAccent"
+                       android:textSize="20sp"
+                       android:padding="5dp"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/level"
+                       android:layout_height="wrap_content"></TextView>
+
+
+                   <Switch
+                       android:layout_marginLeft="20dp"
+                       android:fontVariationSettings="@string/app_name"
+                       android:id="@+id/BckgroungSwitch"
+                       android:theme="@style/SwitchTheme"
+                       android:padding="1dp"
+                       android:checked="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_below="@id/settingtxt"
+                   android:orientation="horizontal"
+                   android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="30dp"
+    android:src="@drawable/ic_volume_up"
+    android:layout_marginTop="10dp"
+    android:id="@+id/img_ButtonSound"
+    android:layout_height="30dp"/>
+
+                   <TextView
+                       android:id="@+id/tv_buttonSwitch"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:layout_marginLeft="10dp"
+                       android:fontFamily="@font/level"
+                       android:padding="5dp"
+                       android:text="Button Sound"
+                       android:textColor="@color/colorAccent"
+                       android:textSize="20sp"
+                       android:textStyle="bold"></TextView>
+
+                   <Switch
+                       android:layout_marginLeft="20dp"
+                       android:fontVariationSettings="@string/app_name"
+                       android:id="@+id/ButtonSwitch"
+                       android:theme="@style/SwitchTheme"
+                       android:padding="1dp"
+                       android:checked="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

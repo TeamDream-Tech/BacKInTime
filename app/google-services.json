@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "231604801456",
+    "firebase_url": "https://backintime-45ce2.firebaseio.com",
+    "project_id": "backintime-45ce2",
+    "storage_bucket": "backintime-45ce2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231604801456:android:77918d61efdc756d5d1075",
+        "android_client_info": {
+          "package_name": "com.example.backintime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231604801456-pa52mph74qe17jumgu0oiv7ff29igjte.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.backintime",
+            "certificate_hash": "0be28d3df778fe49622060413112d6db68a83635"
+          }
+        },
+        {
+          "client_id": "231604801456-uqmusjipi99g12se9l12joq299l316f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvxaGrA133oTUCBJB27Hry-AGDwXJh5m8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231604801456-uqmusjipi99g12se9l12joq299l316f4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

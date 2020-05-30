@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Back In Time </string>
+    <string name="about">Back In Time..... </string>
+    <string name="your_score">Your Score : </string>
+    <string name="computer_score">Computer Score : </string>
+    <string name="compurt_turn">Computer Turn</string>
+    <string name="your_turn">Your Turn</string>
+    <string name="alert_message">Player One Becomes : PLAYER TWO
+ Player Two Becomes : PLAYER ONE
+ Score remain the same</string>
+    <string name="alert_title">Switch Players</string>
+</resources>

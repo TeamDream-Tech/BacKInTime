@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="330dp"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/img"
+          >
+
+            <TextView
+                android:id="@+id/headertextResetMessagin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regu"
+                android:padding="10dp"
+                android:background="@drawable/rounded"
+                android:text="Gamers Name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/headertextResetMessagin"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:id="@+id/relativegamers"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginTop="20sp"
+                    android:src="@drawable/eat"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/playerOneName"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/cokie"
+                    android:layout_below="@+id/playerOneName"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/playerTwoname"
+                    android:layout_height="40dp"/>
+
+                <EditText
+                    android:textCursorDrawable="@null"
+                    android:id="@+id/playerOneName"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded"
+                    android:hint="Player 1 Name"
+                    android:padding="5dp"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"/>
+                <EditText
+                    android:textCursorDrawable="@null"
+                    android:id="@+id/playerTwoname"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded"
+                    android:layout_below="@id/playerOneName"
+                    android:hint="Player 2 Name"
+                    android:padding="5dp"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"/>
+            </RelativeLayout>
+
+
+
+            <Button
+                android:id="@+id/enter"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:fontFamily="@font/level"
+                android:background="@drawable/rounded"
+                android:layout_alignParentBottom="true"
+                android:text="OK"
+
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"></Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_below="@id/headertextResetMessagin"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="© 2020 Venbrino Games Inc."
+                ></TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cancle_game"
+               android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_cancel_black_24dp"></ImageView>
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

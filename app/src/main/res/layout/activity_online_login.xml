@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/with"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fore">
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardView"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:cardCornerRadius="0dp"
+            >
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="60dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_view_p1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/thonking"
+                    android:freezesText="true"
+                    android:text="Player One score :"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/eat"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/eat" />
+
+                <ImageView
+                    android:id="@+id/cokie"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/text_view_p1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/cokie" />
+
+                <TextView
+                    android:id="@+id/text_view_p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_view_p1"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/thonking"
+                    android:freezesText="true"
+                    android:text="Computer Score:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+
+                    ></TextView>
+
+                <ImageView
+                    android:id="@+id/turnImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/text_view_p2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/cokie" />
+
+                <TextView
+                    android:id="@+id/playerTurn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_view_p2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/gametextone"
+                    android:freezesText="true"
+                    android:text="Player one trun"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+
+                    ></TextView>
+
+                <Button
+                    android:id="@+id/button_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded"
+                    android:fontFamily="@font/thonking"
+                    android:text="Reset"
+                    android:textColor="@color/black"></Button>
+
+                <Button
+                    android:id="@+id/button_restart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/button_reset"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded"
+                    android:fontFamily="@font/thonking"
+                    android:text="Restart"
+                    android:textColor="@color/black"></Button>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_below="@id/fore"
+    android:id="@+id/playes"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+
+
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/playes"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/relativeholding"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="40dp"
+            android:id="@+id/cardHolding"
+            android:clickable="false"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/greytransperaent"
+            android:layout_height="wrap_content">
+
+
+            <GridView
+                android:id="@+id/newgrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="auto_fit"
+                android:scrollIndicators="none"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp"></GridView>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="© 2020 Venbrino Games Inc."
+        android:textColor="@color/colorAccent"
+        />
+
+
+</RelativeLayout>
