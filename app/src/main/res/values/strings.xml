@@ -9,4 +9,5 @@
  Player Two Becomes : PLAYER ONE
  Score remain the same</string>
     <string name="alert_title">Switch Players</string>
+    <string name="nice">nice</string>
 </resources>
