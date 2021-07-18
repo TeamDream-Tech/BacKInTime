@@ -9,4 +9,4 @@ A cookie tac toe mobile 2d games built won android.
 *   [Firebase]
 
 ## Author
-Elezua Victor
+Agalaba Ifeanyi Precious
