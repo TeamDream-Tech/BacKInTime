@@ -8,5 +8,12 @@ A cookie tac toe mobile 2d games built won android.
 *   [PhotoView](https://github.com/Baseflow/PhotoView) : PhotoView aims to help produce an easily usable implementation of a zooming Android ImageView.
 *   [Firebase]
 
+<h2 align="left">Screenshots</h2>
+<h4 align="center">
+<img src="images/handMobile.png" width="30%" vspace="10" hspace="10">
+<img src="images/mobile_one.png" width="30%" vspace="10" hspace="10">
+<img src="images/mobile_two.png" width="30%" vspace="10" hspace="10">
+  
+  
 ## Author
 Agalaba Ifeanyi Precious
